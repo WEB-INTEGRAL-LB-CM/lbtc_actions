@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-      "build": "echo \"Build completado\""
+    "build": "mkdir -p public && echo '<h1>Hola mundo</h1>' > public/index.html"
 
   },
   "repository": {
