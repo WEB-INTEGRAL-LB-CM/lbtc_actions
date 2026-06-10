@@ -1,0 +1,34 @@
+name: Desafio 02 - Push y Pull Request Info
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  info-push:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Datos del Push
+        run: |
+          echo "Mensaje: ${{ github.event.commits[0].message }}"
+          echo "Autor: ${{ github.event.commits[0].author.name }}"
+          echo "ID del commit: ${{ github.event.commits[0].id }}"
+          echo "URL del commit: ${{ github.event.commits[0].url }}"
+          echo "Rama: ${{ github.ref_name }}"
+          echo "Repositorio: ${{ github.repository }}"
+
+  info-pull-request:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Datos del Pull Request
+        run: |
+          echo "Titulo: ${{ github.event.pull_request.title }}"
+          echo "Contenido: ${{ github.event.pull_request.body }}"
+          echo "Estado: ${{ github.event.pull_request.state }}"
+          echo "Fusionado: ${{ github.event.pull_request.merged }}"
+          echo "Rama origen: ${{ github.event.pull_request.head.ref }}"
+          echo "Rama destino: ${{ github.event.pull_request.base.ref }}"
+          echo "Repositorio origen: ${{ github.event.pull_request.head.repo.full_name }}"
+          echo "Repositorio destino: ${{ github.event.pull_request.base.repo.full_name }}"
