@@ -1,0 +1,27 @@
+{
+  "name": "lbtc_actions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WEB-INTEGRAL-LB-CM/lbtc_actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/WEB-INTEGRAL-LB-CM/lbtc_actions/issues"
+  },
+  "homepage": "https://github.com/WEB-INTEGRAL-LB-CM/lbtc_actions#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.4.1",
+    "globals": "^17.6.0"
+  }
+}
