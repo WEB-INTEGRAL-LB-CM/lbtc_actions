@@ -19,7 +19,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # Usamos una versión estable y moderna
+          node-version: '24' # Usamos una versión estable y moderna
           cache: 'npm'       # Guarda en caché las dependencias para que corra más rápido
 
       # 3. Instalar ESLint y las dependencias del proyecto
