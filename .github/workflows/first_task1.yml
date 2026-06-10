@@ -8,4 +8,5 @@ jobs:
       - name: Saludo
         run: echo "Bienvenidos a todos"
       - name: fechaSistema
-        run: echo "Bienvenidos a mi primer desafio que fue realizado por Laura Berenice Tapia Cid a las: $(date)"
+        run: |
+          echo "Bienvenidos a mi primer desafio que fue realizado por Laura Berenice Tapia Cid a las: $(date)"
